@@ -302,5 +302,6 @@ class JSONInstanceTest < Test::Unit::TestCase
   def test_to_json_with_array
     assert_send_type "() -> String", [], :to_json
     assert_send_type "(JSON::State) -> String", [], :to_json, JSON::State.new
+    assert_send_type "(untyped) -> untyped", [], :foo
   end
 end
