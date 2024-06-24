@@ -1280,7 +1280,7 @@ class Array[unchecked out Elem]
   # _state_ is a JSON::State object, that can also be used to configure the
   # produced JSON string output further.
   #
-  def to_json: (?JSON::State state) -> String
+  def to_json: (?JSON::State state) -> Array
 end
 
 %a{annotate:rdoc:skip}
